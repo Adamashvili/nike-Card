@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0C9CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 700px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 2px grey;
+    padding: 19px;
+    background-color: #F6F6F6;
+}
+
+.container-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sizes p {
+    color: #E0C9CB;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-left ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+}
+
+.container-left ul button {
+    list-style: none;
+    border: 2px solid rgb(186, 150, 156);
+    padding: 10px 8px;
+    position: relative;
+    left: 0;
+    color: #E0C9CB;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.container-left ul button:hover,
+.container-left ul button:focus {
+    background-color: #E0C9CB;
+    color: white;
+}
+
+.container-left img {
+    width: 100%;
+    transition: 0.5s all;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container-left img:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.container-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    justify-content: center;
+    padding-inline: 15px;
+
+
+
+}
+
+.container-right h3 {
+    color: pink;
+}
+
+.container-right .header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+
+
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header h2 {
+    color: #E0C9CB;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.container-right .cart {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .buy {
+    padding: 12px 40px;
+    background-color: #CDA9AC;
+    color: white;
+    border: none;
+}
+
+.cart .hearth {
+    padding: 10px 25px;
+    background-color: #CDA9AC;
+    color: white;
+    border: none;
+}
